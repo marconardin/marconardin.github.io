@@ -1,0 +1,76 @@
+ul
+{
+    list-style-type: none;
+}
+
+img
+{
+    width: 336px;
+    height: 252px;
+}
+
+.verticle_img
+{
+    transform: rotate(90deg);
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.top-navbar
+{
+    position: fixed; /* sticky */
+    top: 0;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.top-navbar ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.top-navbar li
+{
+    float: left;
+}
+
+.top-navbar a
+{
+    float: left;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-navbar li a
+{
+    display: block;
+    background-color: #ddd;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.top-navbar .active
+{
+    background-color: #0fadea;
+    color: white;
+}
+
+/* active bar hover only */
+.top-navbar a:hover
+{
+    background-color: #04506d;
+    color: white;
+}
+
+/* change link color on hover, for a non-active bar */
+.top-navbar li a:hover:not(.active)
+{
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
