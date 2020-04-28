@@ -5,8 +5,14 @@ h1, h2, h3, p, .center
 
 .center
 {
-    max-width: 500px;
+    max-width: 960px;
     margin: auto;
+}
+
+.left-align
+{
+    display: inline-block;
+    text-align: left;
 }
 
 ul
