@@ -41,18 +41,20 @@
                     </ol>
                 </div>
             </div>
-            <h4>Calculator</h4>
-            <form onsubmit="calculate_pace(); return false;">
-                <input type="radio" id="km" name="measurement" value="kilometer">
-                <label for="km">Kilometers</label><br>
-                <input type="radio" id="mile" name="measurement" value="mile">
-                <label for="mile">Miles</label><br>
-                <label for="distance">Distance:</label><br>
-                <input type="text" id="distance" name="distance"><br>
-                <label for="time">Time (minutes):</label><br>
-                <input type="text" id="time" name="time"><br><br>
-                <input type="submit" value="Calculate">
-            </form>
+            <div class="center">
+                <h4>Calculator</h4>
+                <form onsubmit="calculate_pace(); return false;">
+                    <input type="radio" id="km" name="measurement" value="kilometer">
+                    <label for="km">Kilometers</label><br>
+                    <input type="radio" id="mile" name="measurement" value="mile">
+                    <label for="mile">Miles</label><br>
+                    <label for="distance">Distance:</label><br>
+                    <input type="text" id="distance" name="distance"><br>
+                    <label for="time">Time (minutes):</label><br>
+                    <input type="text" id="time" name="time"><br><br>
+                    <input type="submit" value="Calculate">
+                </form>
+            </div>
             <p id="calculated_pace"></p>
             <div class="center">
                 <h2>Races</h2>
