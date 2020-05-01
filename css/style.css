@@ -12,7 +12,7 @@ h1, h2, h3, p, .center
 #pace-calculator
 {
     max-width: 480px;
-    border-width: 3px !important;
+    border-width: 2px !important;
 }
 
 .left-align
