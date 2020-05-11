@@ -51,14 +51,14 @@ footer
     height: 2.5rem; /* footer height */
 }
 
-.verticle_img
+.verticle-image
 {
     transform: rotate(90deg);
     overflow: hidden;
     margin: 50px auto;
 }
 
-.large_image
+.large-image
 {
     width: 480px;
 }
