@@ -58,6 +58,11 @@ footer
     margin: 50px auto;
 }
 
+.large_image
+{
+    width: 480px;
+}
+
 .top-navbar
 {
     position: fixed; /* sticky */
