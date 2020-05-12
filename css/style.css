@@ -39,6 +39,16 @@ footer {
     height: auto;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    margin: 20px;
+    padding: 20px;
+}
+
 .top-navbar {
     position: fixed; /* sticky */
     top: 0;
