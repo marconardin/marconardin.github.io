@@ -2,21 +2,6 @@ h1, h2, h3, p, .center {
     text-align: center;
 }
 
-.center {
-    max-width: 960px;
-    margin: auto;
-}
-
-#pace-calculator {
-    max-width: 480px;
-    border-width: 2px !important;
-}
-
-.left-align {
-    display: inline-block;
-    text-align: left;
-}
-
 ul {
     list-style-type: none;
 }
@@ -25,20 +10,21 @@ img {
     width: 480px;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh; /* vh = viewport height */
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem; /* footer height */
-}
-
 footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
     height: 2.5rem; /* footer height */
+    width: 100%;
+    position: absolute;
+}
+
+.center {
+    margin: auto;
+    max-width: 960px;
+}
+
+.left-align {
+    display: inline-block;
+    text-align: left;
 }
 
 .verticle-image {
@@ -52,13 +38,6 @@ footer {
     max-width: 400px;
     height: auto;
 }
-
-/*
-.large-image
-{
-    width: 480px;
-}
-*/
 
 .top-navbar {
     position: fixed; /* sticky */
@@ -109,4 +88,18 @@ footer {
     background-color: #555;
     color: white;
     text-decoration: none;
+}
+
+#page-container {
+    min-height: 100vh; /* vh = viewport height */
+    position: relative;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem; /* footer height */
+}
+
+#pace-calculator {
+    border-width: 2px !important;
+    max-width: 480px;
 }
