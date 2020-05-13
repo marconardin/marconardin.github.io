@@ -1,119 +1,123 @@
-h1, h2, h3, p, .center {
-    text-align: center;
+h1,
+h2,
+h3,
+p,
+.center {
+  text-align: center;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    width: 480px;
+  width: 480px;
 }
 
 footer {
-    bottom: 0;
-    height: 2.5rem; /* footer height */
-    width: 100%;
-    position: absolute;
+  bottom: 0;
+  height: 2.5rem; /* footer height */
+  width: 100%;
+  position: absolute;
 }
 
 .center {
-    margin: auto;
-    max-width: 960px;
+  margin: auto;
+  max-width: 960px;
 }
 
 .left-align {
-    display: inline-block;
-    text-align: left;
+  display: inline-block;
+  text-align: left;
 }
 
 .verticle-image {
-    transform: rotate(90deg);
-    overflow: hidden;
-    margin: 50px auto;
+  transform: rotate(90deg);
+  overflow: hidden;
+  margin: 50px auto;
 }
 
 .small-image {
-    max-width: 320px;
+  max-width: 320px;
 }
 
 .responsive {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .container > div {
-    margin: 10px;
-    padding: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .top-navbar {
-    position: fixed; /* sticky */
-    top: 0;
-    background-color: #ddd;
-    overflow: hidden;
+  position: fixed; /* sticky */
+  top: 0;
+  background-color: #ddd;
+  overflow: hidden;
 }
 
 .top-navbar ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .top-navbar li {
-    float: left;
+  float: left;
 }
 
 .top-navbar a {
-    float: left;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .top-navbar li a {
-    display: block;
-    background-color: #ddd;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+  display: block;
+  background-color: #ddd;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .top-navbar .active {
-    background-color: #0fadea;
-    color: white;
+  background-color: #0fadea;
+  color: white;
 }
 
 /* active bar hover only */
 .top-navbar a:hover {
-    background-color: #04506d;
-    color: white;
+  background-color: #04506d;
+  color: white;
 }
 
 /* change link color on hover, for a non-active bar */
 .top-navbar li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-    text-decoration: none;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
 }
 
 #page-container {
-    min-height: 100vh; /* vh = viewport height */
-    position: relative;
+  min-height: 100vh; /* vh = viewport height */
+  position: relative;
 }
 
 #content-wrap {
-    padding-bottom: 2.5rem; /* footer height */
+  padding-bottom: 2.5rem; /* footer height */
 }
 
 #pace-calculator {
-    border-width: 2px !important;
-    max-width: 480px;
+  border-width: 2px !important;
+  max-width: 480px;
 }

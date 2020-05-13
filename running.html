@@ -1,124 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="pace_calculator.js"></script>
-        <title>My Webpage - Running</title>
-    </head>
-    <body>
-        <div id="page-container">
-            <div id="content-wrap">
-                <nav class="top-navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="baking.html">Baking</a></li>
-                        <li><a class="active" href="running.html">Running</a></li>
-                    </ul>
-                </nav>
-                <br><br><h1>Running</h1>
-                <div class="center">
-                    <img src="misc_pics/charles_mgh_sun.jpg" class="responsive" alt="charles mgh tstop">
-                </div>
-                <div class="center">
-                    <h2>My Story</h2>
-                        <p>I love running. It's something I've been doing from a very young age when I played soccer (where I was dubbed the 'roadrunner' by my teammates and coaches for constantly running up and down the field), through middle school and high school on the cross-country and track teams, and now as an adult for my own personal fulfillment.
-                        There is something special about running in the way that it makes you feel deeply connected to yourself, widely to the people around you, and profoundly to our forebears. As of yet, I have not been able to find an activity that provides the same experience that peak running presents naturally.
-                        Running is an activity I highly recommend, not only as a method of staying physically active but as a way of honing your mind and spirit.</p>
-                </div>
-                <div class="center">
-                    <h2>The Present Day</h2>
-                        <p>To this day I continue to run and make it part of my weekly ritual. I'm currently training for the Marine Corps Marathon in October where my goal is to run between at 3:00 and 3:30 marathon.</p>
-                </div>
-                <div class="center">
-                    <h2>Pace Calculator</h2>
-                        <p>I've added a pace calculator here since I think it's a handy tool for seeing what your goal pace would be given the amount of time you want to run over a given distance.</p>
-                    <div class="left-align">
-                        <ol>
-                            <li>Select kilometers or miles</li>
-                            <li>Enter the total distance</li>
-                            <li>Enter the total time (in minutes) for that distance</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="center border border-info rounded-lg" id="pace-calculator">
-                    <h4>Calculator</h4>
-                    <form onsubmit="calculate_pace(); return false;">
-                        <input type="radio" id="km" name="measurement" value="kilometer">
-                        <label for="km">Kilometers</label><br>
-                        <input type="radio" id="mile" name="measurement" value="mile">
-                        <label for="mile">Miles</label><br>
-                        <label for="distance">Distance:</label><br>
-                        <input type="text" id="distance" name="distance"><br>
-                        <label for="time">Time (minutes):</label><br>
-                        <input type="text" id="time" name="time"><br><br>
-                        <input type="submit" value="Calculate">
-                    </form>
-                </div>
-                <p id="calculated_pace"></p>
-                <div class="center">
-                    <h2>Races</h2>
-                    <h3>Past Races</h3>
-                    <table class="table">
-                        <thead class="thead-light">
-                            <th>Number</th>
-                            <th>Race Name</th>
-                            <th>Distance</th>
-                            <th>Date</th>
-                            <th>Completion Time</th>
-                            <th>Pace</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Boston Summer Series</td>
-                                <td>5k</td>
-                                <td>September 6, 2018</td>
-                                <td>20:49</td>
-                                <td>6:42/mile</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Marine Corps Marathon</td>
-                                <td>10k</td>
-                                <td>October 28, 2018</td>
-                                <td>45:53</td>
-                                <td>7:23/mile</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h3>Future Races</h3>
-                    <table class="table">
-                        <thead class="thead-light">
-                            <th>Number</th>
-                            <th>Race Name</th>
-                            <th>Distance</th>
-                            <th>Date</th>
-                            <th>Goal Time</th>
-                            <th>Goal Pace</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Marine Corps Marathon</td>
-                                <td>Marathon (40k/26.2m)</td>
-                                <td>October 25, 2020</td>
-                                <td>Between 3:00:00 and 3:30:00</td>
-                                <td>Between 6:50/mile and 8:00/mile</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="center">
-                    <img src="misc_pics/boston_row.jpg" class="responsive" alt="charles river row">
-                </div>
-            </div>
-            <footer>
-                <p>&copy; Marco Nardin 2020<br>marconardin.github.io</p>
-            </footer>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="pace_calculator.js"></script>
+    <title>My Webpage - Running</title>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <nav class="top-navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="baking.html">Baking</a></li>
+            <li><a class="active" href="running.html">Running</a></li>
+          </ul>
+        </nav>
+        <br /><br />
+        <h1>Running</h1>
+        <div class="center">
+          <img
+            src="misc_pics/charles_mgh_sun.jpg"
+            class="responsive"
+            alt="charles mgh tstop"
+          />
         </div>
-    </body>
+        <div class="center">
+          <h2>My Story</h2>
+          <p>
+            I love running. It's something I've been doing from a very young age
+            when I played soccer (where I was dubbed the 'roadrunner' by my
+            teammates and coaches for constantly running up and down the field),
+            through middle school and high school on the cross-country and track
+            teams, and now as an adult for my own personal fulfillment. There is
+            something special about running in the way that it makes you feel
+            deeply connected to yourself, widely to the people around you, and
+            profoundly to our forebears. As of yet, I have not been able to find
+            an activity that provides the same experience that peak running
+            presents naturally. Running is an activity I highly recommend, not
+            only as a method of staying physically active but as a way of honing
+            your mind and spirit.
+          </p>
+        </div>
+        <div class="center">
+          <h2>The Present Day</h2>
+          <p>
+            To this day I continue to run and make it part of my weekly ritual.
+            I'm currently training for the Marine Corps Marathon in October
+            where my goal is to run between at 3:00 and 3:30 marathon.
+          </p>
+        </div>
+        <div class="center">
+          <h2>Pace Calculator</h2>
+          <p>
+            I've added a pace calculator here since I think it's a handy tool
+            for seeing what your goal pace would be given the amount of time you
+            want to run over a given distance.
+          </p>
+          <div class="left-align">
+            <ol>
+              <li>Select kilometers or miles</li>
+              <li>Enter the total distance</li>
+              <li>Enter the total time (in minutes) for that distance</li>
+            </ol>
+          </div>
+        </div>
+        <div class="center border border-info rounded-lg" id="pace-calculator">
+          <h4>Calculator</h4>
+          <form onsubmit="calculate_pace(); return false;">
+            <input type="radio" id="km" name="measurement" value="kilometer" />
+            <label for="km">Kilometers</label><br />
+            <input type="radio" id="mile" name="measurement" value="mile" />
+            <label for="mile">Miles</label><br />
+            <label for="distance">Distance:</label><br />
+            <input type="text" id="distance" name="distance" /><br />
+            <label for="time">Time (minutes):</label><br />
+            <input type="text" id="time" name="time" /><br /><br />
+            <input type="submit" value="Calculate" />
+          </form>
+        </div>
+        <p id="calculated_pace"></p>
+        <div class="center">
+          <h2>Races</h2>
+          <h3>Past Races</h3>
+          <table class="table">
+            <thead class="thead-light">
+              <th>Number</th>
+              <th>Race Name</th>
+              <th>Distance</th>
+              <th>Date</th>
+              <th>Completion Time</th>
+              <th>Pace</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Boston Summer Series</td>
+                <td>5k</td>
+                <td>September 6, 2018</td>
+                <td>20:49</td>
+                <td>6:42/mile</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Marine Corps Marathon</td>
+                <td>10k</td>
+                <td>October 28, 2018</td>
+                <td>45:53</td>
+                <td>7:23/mile</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Future Races</h3>
+          <table class="table">
+            <thead class="thead-light">
+              <th>Number</th>
+              <th>Race Name</th>
+              <th>Distance</th>
+              <th>Date</th>
+              <th>Goal Time</th>
+              <th>Goal Pace</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Marine Corps Marathon</td>
+                <td>Marathon (40k/26.2m)</td>
+                <td>October 25, 2020</td>
+                <td>Between 3:00:00 and 3:30:00</td>
+                <td>Between 6:50/mile and 8:00/mile</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="center">
+          <img
+            src="misc_pics/boston_row.jpg"
+            class="responsive"
+            alt="charles river row"
+          />
+        </div>
+      </div>
+      <footer>
+        <p>&copy; Marco Nardin 2020<br />marconardin.github.io</p>
+      </footer>
+    </div>
+  </body>
 </html>
