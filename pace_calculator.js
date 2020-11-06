@@ -3,7 +3,7 @@ function get_distance_type() {
 }
 
 function convert_decimal_to_seconds(pace) {
-  return Math.round((((pace * 100) % 100) * 0.6 * 100) / 100);
+  return Math.round((((pace * 100) % 100) * 60) / 100);
 }
 
 function calculate_pace() {
@@ -16,11 +16,9 @@ function calculate_pace() {
   let seconds = convert_decimal_to_seconds(pace);
   pace = Math.floor(pace);
 
-  document.querySelector("#calculated_pace").innerHTML =
-    "Your pace: " +
-    pace +
-    " minutes and " +
-    seconds +
-    " seconds per " +
-    distance_type;
+  let text = "Your pace: " + pace + " minutes";
+  if (seconds !== 0) text += " and " + seconds + " seconds ";
+  text += " per " + distance_type;
+
+  document.querySelector("#calculated_pace").innerHTML = text;
 }
